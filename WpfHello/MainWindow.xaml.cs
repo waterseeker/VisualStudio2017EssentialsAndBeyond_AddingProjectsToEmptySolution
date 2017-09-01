@@ -27,7 +27,12 @@ namespace WpfHello
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello Again!");
+            GreetingLogic.Greeting gl = new GreetingLogic.Greeting();
+            string message = gl.GetString();
+            MessageBox.Show(message);
+            //removed this so we could use the GreetingLogic for a more
+            //dynamic greeting message
+            //MessageBox.Show("Hello Again!");
         }
     }
 }

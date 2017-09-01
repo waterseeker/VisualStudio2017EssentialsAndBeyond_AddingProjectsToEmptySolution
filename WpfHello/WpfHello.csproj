@@ -93,5 +93,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GreetingLogic\GreetingLogic.csproj">
+      <Project>{ce5a3b32-24da-472f-acbf-50724688c543}</Project>
+      <Name>GreetingLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
