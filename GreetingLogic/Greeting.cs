@@ -10,12 +10,12 @@ namespace GreetingLogic
     {
         public string GetString()
         {
-            string greeting = "Hello";
+            string greeting = "Hello!";
             int hour = DateTime.Now.Hour;
             if (hour < 12)
-                greeting = "Good Morning";
+                greeting = "Good Morning!";
             else if (hour > 18)
-                greeting = "Good Evening";
+                greeting = "Good Evening!";
             return greeting;
         }
     }
