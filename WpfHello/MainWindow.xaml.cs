@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GreetingLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,7 @@ namespace WpfHello
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            GreetingLogic.Greeting gl = new GreetingLogic.Greeting();
+            Greeting gl = new Greeting();
             string message = gl.GetString();
             MessageBox.Show(message);
             //removed this so we could use the GreetingLogic for a more
